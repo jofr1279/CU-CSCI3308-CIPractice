@@ -1,5 +1,5 @@
 sudo: required
 language: c
 compiler: gcc
-before_install: make dep
+before_install: sudo apt update; make dep
 script: make clean && make test
