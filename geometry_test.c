@@ -159,6 +159,15 @@ START_TEST(test_2d_area_triangle)
     c.y = 8;
 
     ck_assert(coord_2d_area_triangle(&a, &b, &c) == 24.0);
+
+    a.x = 3;
+    a.y = 6;
+    b.x = 6;
+    b.y = 10;
+    c.x = 10;
+    c.y = 5;
+
+    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 15.5);
 }
 END_TEST
 
