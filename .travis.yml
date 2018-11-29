@@ -1,5 +1,5 @@
 language: c
 compiler: gcc
-before_install: make dep
+#before_install: make dep
 script: make clean && make test
 sudo: required
